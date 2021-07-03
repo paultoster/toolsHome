@@ -1,0 +1,69 @@
+// Grundsatzzuordnungen
+//
+#ifndef SFL_BASE_H_INCLUDED
+#define SFL_BASE_H_INCLUDED
+
+#include <stdint.h>
+#include <float.h>
+#include <math.h>
+
+#include "SlfDef.h"
+
+namespace slf
+{
+  // Error-Zuordnung
+  enum EErrNo
+  {
+    NO_ERR = 0
+    , UNKOWN_ERR
+    , NOT_FOUND
+    , FUNCTION_NOT_DEFINED
+    , FUNCTION_ERR
+    , NO_FILE_READ
+    , OPEN_FILE_PROBLEM
+    , NO_END_QUOT
+    , NO_PARAMETER_FOUND
+    , PARAMETER_NAME_NOT_FOUND
+    , NO_VALUE_CONVERTED
+    , NO_VALUE_FOUND
+    , VALUE_IS_ZERO
+    , VALUE_TO_SMALL
+    , VALUE_TO_BIG
+    , NO_FACTOR_OFFSET_FOUND
+    , OVER_UNDER_FLOW
+    , INDEX_BRACKET_NOT_OKAY
+    , UNIT_BRACKET_NOT_OKAY
+    , NOT_ENOUGH_MEMORY
+    , NO_CLOSE_BRACKET
+    , MATRIX_IS_SINGULAR
+    , MATRIX_SIZE_WRONG
+    , MATRIX_NOT_SQUARED
+    , STEPSIZE_TOO_SMALL
+    , NMAX_REACHED
+    , N_IS_ZERO
+    , INPUT_NOT_CONSISTENT
+    , INPUT_NOT_FOUND
+    , STATE_NO_SUCCESS
+    , JACOBI_NO_SUCCESS
+    , JACOBI_NOT_DEFINED
+    , MASS_NO_SUCCESS
+    , WRONG_POINTER
+    , WRONG_TYPE
+    , WRONG_INDEX
+    , VECTOR_IS_ZERO
+    , VECTOR_NOT_MONOTON_INCREASING
+    , VECTOR_TO_SMALL
+    , VECTOR_LENGTH
+    , FUNCTION_POINTER_NOT_SET
+    , ODE_GETTING_STIFF
+    , PAR_PARSET
+    , PAR_FILEREAD
+    , PAR_TEMPLATE_FILE
+    , PAR_DEFAULT_VALUE
+    , UNREG_ERROR
+  };
+
+
+
+} // namespace slf
+#endif
