@@ -1,0 +1,18 @@
+!
+group1
+{
+  subgroup1
+  {
+      var1 [m/s] = 10.3;
+  }
+  subgroup2
+  {
+      var2 = ["abc","def"];
+  }
+}
+
+group2.subgroup1.var1 [m] = 2.5;
+group2.subgroup2.var2 = ["abc","def"];
+vehicle.v0      [m/s] = 0.1; ! velocity
+vehicle.s0      [m]   = 100.; ! distance
+vehicle.massVeh [kg]  = 30; ! mass vehicle
